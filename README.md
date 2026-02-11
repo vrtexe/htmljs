@@ -1,11 +1,11 @@
-# html-js
+# html-js-dom
 
-[![issues](https://img.shields.io/github/issues/vrtexe/html-js.svg?style=flat-square)](https://www.npmjs.com/package/html-js) [![npm](https://img.shields.io/npm/v/html-js.svg?style=flat-square)](https://www.npmjs.com/package/html-js) [![mit](https://img.shields.io/npm/l/rollup-plugin-sass-bundle.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![issues](https://img.shields.io/github/issues/vrtexe/html-js-dom.svg?style=flat-square)](https://www.npmjs.com/package/html-js-dom) [![npm](https://img.shields.io/npm/v/html-js-dom.svg?style=flat-square)](https://www.npmjs.com/package/html-js-dom) [![mit](https://img.shields.io/npm/l/html-js-dom.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
 ## Install
 
 ```sh
-npm install -D html-js
+npm install -D html-js-dom
 ```
 
 ## Description
@@ -125,4 +125,4 @@ document.body.appendChild(
 
 ## License
 
-[MIT](https://github.com/vrtexe/html-js/blob/main/LICENSE.md)
+[MIT](https://github.com/vrtexe/html-js-dom/blob/main/LICENSE.md)
