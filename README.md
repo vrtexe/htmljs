@@ -15,7 +15,7 @@ A simple library for creating `html` elements in javascript, uses javascript to 
 ## Usage
 
 ```js
-import { div, button, label, input } from 'html-dom-js/html';
+import { div, button, label, input } from 'html-dom-js';
 
 document.body.appendChild(
   div({
@@ -89,7 +89,7 @@ Every tag has its own method defined, the general `element` function can be used
 Example:
 
 ```js
-import { element } from '../index.js';
+import { element } from 'html-dom-js';
 
 document.body.appendChild(
   element('div', {
@@ -106,7 +106,7 @@ Some properties can be defined in multiple ways, the main options are applied in
 - `event` - The event listeners are attached last.
 
 ```js
-import { element } from '../index.js';
+import { element } from 'html-dom-js';
 
 document.body.appendChild(
   element('div', {
@@ -118,6 +118,16 @@ document.body.appendChild(
     children: 'Content',
   }),
 );
+```
+
+Import styles:
+
+```js
+import { element } from 'html-dom-js';
+import { element } from 'html-dom-js/html';
+import h from 'html-dom-js/html';
+import svg from 'html-dom-js/svg';
+import { svg, html } from 'html-dom-js/global';
 ```
 
 > The mdn javascript/html documentation applies here
