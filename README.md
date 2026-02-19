@@ -15,7 +15,7 @@ A simple library for creating `html` elements in javascript, uses javascript to 
 ## Usage
 
 ```js
-import { div, button, label, input } from '../index.js';
+import { div, button, label, input } from 'html-dom-js/html';
 
 document.body.appendChild(
   div({

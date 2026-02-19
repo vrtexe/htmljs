@@ -5,10 +5,14 @@
   "license": "MIT",
   "author": "vrtexe",
   "type": "module",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "lib/html.js",
+  "types": "lib/html.d.ts",
   "exports": {
     ".": {
+      "default": "./lib/html.js",
+      "types": "./lib/html.d.ts"
+    },
+    "./global": {
       "default": "./lib/index.js",
       "types": "./lib/index.d.ts"
     },
