@@ -1,4 +1,3 @@
-/** @import { type SVGElementData } from './types/svg.dom.js' */
 /**
  * @param {SVGElementData<'a'>} data
  * @returns {SVGElementTagNameMap['a']}
@@ -314,7 +313,9 @@ export function use(data: SVGElementData<"use">): SVGElementTagNameMap["use"];
  * @returns {SVGElementTagNameMap['view']}
  */
 export function view(data: SVGElementData<"view">): SVGElementTagNameMap["view"];
+export { svgElement as element };
 declare namespace _default {
+    export { svgElement as element };
     export { a };
     export { animate };
     export { animateMotion };
@@ -381,3 +382,4 @@ declare namespace _default {
 }
 export default _default;
 import type { SVGElementData } from './types/svg.dom.js';
+import { svgElement } from './core/svg.js';

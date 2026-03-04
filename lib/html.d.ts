@@ -1,4 +1,3 @@
-/** @import { type ElementData } from './types/html.dom.js' */
 /**
  * @param {ElementData<'a'>} data
  * @returns {HTMLElementTagNameMap['a']}
@@ -559,7 +558,9 @@ export function video(data: ElementData<"video">): HTMLElementTagNameMap["video"
  * @returns {HTMLElementTagNameMap['wbr']}
  */
 export function wbr(data: ElementData<"wbr">): HTMLElementTagNameMap["wbr"];
+export { element };
 declare const _default: Readonly<{
+    element: typeof element;
     a: typeof a;
     abbr: typeof abbr;
     address: typeof address;
@@ -675,3 +676,4 @@ declare const _default: Readonly<{
 }>;
 export default _default;
 import type { ElementData } from './types/html.dom.js';
+import { element } from './core/html.js';

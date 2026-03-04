@@ -7,6 +7,7 @@
  */
 export function element<T extends keyof HTMLElementTagNameMap>(tag: T, data?: ElementData<T>): HTMLElementTagNameMap[T];
 /**
+ * @deprecated
  * @template {keyof HTMLElementDeprecatedTagNameMap} T
  * @param {T} tag
  * @param {DeprecatedElementData<T>} [data]

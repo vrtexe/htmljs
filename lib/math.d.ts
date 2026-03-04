@@ -1,4 +1,3 @@
-/** @import { type MathElementData } from './types/math.dom' */
 /**
  * @param {MathElementData<'a'>} data
  * @returns {MathMLElementTagNameMap['a']}
@@ -154,7 +153,9 @@ export function munderover(data: MathElementData<"munderover">): MathMLElementTa
  * @returns {MathMLElementTagNameMap['semantics']}
  */
 export function semantics(data: MathElementData<"semantics">): MathMLElementTagNameMap["semantics"];
+export { mathElement as element };
 declare namespace _default {
+    export { mathElement as element };
     export { a };
     export { annotation };
     export { annotationXml };
@@ -189,3 +190,4 @@ declare namespace _default {
 }
 export default _default;
 import type { MathElementData } from './types/math.dom';
+import { mathElement } from './core/math.js';

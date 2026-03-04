@@ -1,4 +1,3 @@
-/** @import { DeprecatedElementData } from './types/html.dom.js' */
 /**
  * @deprecated
  * @param {DeprecatedElementData<'acronym'>} data
@@ -173,7 +172,9 @@ export function tt(data: DeprecatedElementData<"tt">): HTMLElementDeprecatedTagN
  * @returns {HTMLElementDeprecatedTagNameMap['xmp']}
  */
 export function xmp(data: DeprecatedElementData<"xmp">): HTMLElementDeprecatedTagNameMap["xmp"];
+export { deprecatedElement as element };
 declare const _default: Readonly<{
+    element: typeof deprecatedElement;
     acronym: typeof acronym;
     applet: typeof applet;
     basefont: typeof basefont;
@@ -206,3 +207,4 @@ declare const _default: Readonly<{
 }>;
 export default _default;
 import type { DeprecatedElementData } from './types/html.dom.js';
+import { deprecatedElement } from './core/html.js';

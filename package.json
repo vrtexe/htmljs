@@ -31,6 +31,9 @@
     "./math": {
       "default": "./lib/math.js",
       "types": "./lib/math.d.ts"
+    },
+    "./type/*": {
+      "default": "./lib/types/*"
     }
   },
   "files": [
@@ -38,7 +41,8 @@
   ],
   "scripts": {
     "start": "npx http-server . --port 3100",
-    "generate-types": "npx -p typescript tsc -p tsconfig.json"
+    "clean-types": "node ./clean-types.js",
+    "generate-types": "npm run clean-types && npx -p typescript tsc -p tsconfig.json"
   },
   "homepage": "https://github.com/vrtexe/html-dom-js#readme",
   "bugs": {
